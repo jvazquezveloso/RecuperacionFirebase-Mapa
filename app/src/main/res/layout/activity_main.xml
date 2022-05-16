@@ -7,12 +7,92 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/textoInicioSesion"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginEnd="84dp"
+        android:text="Inicio de sesión"
+        android:textColor="#000000"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
 
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="152dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="#4A4A4A"
+        android:text="Aceptar"
+        app:iconTint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuadroContraseña" />
+
+    <EditText
+        android:id="@+id/cuadroEmail"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoEmail" />
+
+    <EditText
+        android:id="@+id/cuadroContraseña"
+        android:layout_width="288dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="62dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoContraseña" />
+
+    <TextView
+        android:id="@+id/textoEmail"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Introduce tu correo electrónico:"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textoInicioSesion" />
+
+    <TextView
+        android:id="@+id/textoContraseña"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="63dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Introduce tu contraseña:"
+        android:textColor="#434343"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuadroEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
